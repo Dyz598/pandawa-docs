@@ -1,18 +1,18 @@
 # The Basics/Sample App
 
-In Pandawa most of your code will be done in the `src` folder. 
-
 In this example app we will be making one `GET` method API with
 the endpoint `ping` that will return a JSON response with the
 field `pong` with the boolean value `true`.
 
+In Pandawa most of your code will be placed/done in the `src` folder.
+
 Pandawa has separated Laravel's default service providers to make
-its base skeleton more plain and so by default it does not have much features yet.
+its base skeleton more plain and so by default it does not have 
+features/components yet. So we need to instruct/install all 
+the components we need for our application.
 
-So we need to instruct/install all the components we need for our application.
-
-For this example we will be installing the routing bundle and annotation bundle with
-the following commands.
+For this example we will be installing the following bundles/packages from
+the following commands to install the things we need for our application.
 
 ```
 composer require pandawa/routing-bundle:"^5.0"
@@ -24,8 +24,8 @@ composer require pandawa/routing-annotations:"^5.0"
 composer require pandawa/view-bundle:"^5.0"
 ```
 
-These four packages will install the routing and annotation component/feature to 
-the application for creating the application we need.
+These four packages will install the routing, view and annotation component/feature to 
+the application.
 
 Create a `SampleBundle` class that extends the `Bundle` class
 from Pandawa in the `src` folder.
@@ -58,7 +58,7 @@ class SampleBundle extends Bundle implements HasPluginInterface
 The class above will register parts of our code to the application.
 We implement the `HasPluginInterface` if we have specific parts of 
 our code to be registered. The `ImportRouteAnnotationPlugin` will instruct 
-to specifically register routes that have the route annotation that will be
+to specifically register routes from classes that have the route annotation which will be
 explained soon.
 
 Register the class/bundle above by putting it in the `config/bundles.php` array

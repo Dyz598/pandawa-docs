@@ -6,7 +6,7 @@ and **beautifully coded** backend applications.
 
 ## Installation
 
-To install run the following composer `create-project` command with 
+To start using Pandawa run the following composer `create-project` command with 
 the desirable project name.
 
 ```
@@ -26,6 +26,7 @@ learning all its features. Enjoy!
     - [Directory Structure]()
     - [Bundle]()
     - [Plugin]()
+    - [Configuration]()
     - [Annotations]()
     - [Dependency Injection]()
 - Routing
