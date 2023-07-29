@@ -6,7 +6,8 @@ and **beautifully coded** backend applications.
 
 ## Installation
 
-To install git clone the skeleton project with the desirable project name.
+To install run the following composer `create-project` command with 
+the desirable project name.
 
 ```
 composer create-project pandawa/skeleton example-app
@@ -18,21 +19,27 @@ The following will give you a starting point in learning Pandawa and navigating
 its documentation from making a sample application to learning its architect and 
 learning all its features. Enjoy!
 
-- [Getting Started](getting-started.md)
-- [Architecture Concept](architect/readme.md)
+- Getting Started
+    - [Installation/Setup](getting-started/installation.md)
+    - [The Basics/Sample App](getting-started/basics.md)
+- Architecture
+    - [Directory Structure]()
     - [Bundle]()
+    - [Plugin]()
     - [Annotations]()
-- [Database](database/readme.md)
+    - [Dependency Injection]()
+- Routing
+    - [Basic Routing]()
+    - [API Resource]()
+    - [API Message]()
+- Database
     - [Migrations]()
     - [Eloquent/Model]()
     - [Relation]()
     - [Repository]()
-- [Routing](routing/readme.md)
-    - [API Resource]()
-    - [API Message]()
-- [Digging Dipper]()
+- Advanced Topics
     - [Domain Driven Design]()
-    - [Microservices Event Driven Architecture]()
+    - [Microservices]()
 
 ## License
 
