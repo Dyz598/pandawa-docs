@@ -23,7 +23,7 @@ learning all its features. Enjoy!
     - [Installation/Setup](getting-started/installation.md)
     - [The Basics/Sample App](getting-started/basics.md)
 - Architecture
-    - [Directory Structure]()
+    - [Directory Structure](architecture/directory-structure.md)
     - [Bundle]()
     - [Plugin]()
     - [Configuration]()
@@ -38,7 +38,12 @@ learning all its features. Enjoy!
     - [Eloquent/Model]()
     - [Relation]()
     - [Repository]()
-- Advanced Topics
+- Components
+    - [Events]()
+    - [Console]()
+    - [Scheduler]()
+- Topics
+    - [Best Practices]()
     - [Domain Driven Design]()
     - [Microservices]()
 
