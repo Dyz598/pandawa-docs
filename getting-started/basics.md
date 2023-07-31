@@ -58,10 +58,10 @@ class SampleBundle extends Bundle implements HasPluginInterface
 The class above will register parts of our code to the application.
 We implement the `HasPluginInterface` if we have specific parts of 
 our code to be registered. The `ImportRouteAnnotationPlugin` will instruct 
-to specifically register routes from classes that have the route annotation which will be
-explained soon.
+to specifically register routes from classes that have the `Routable` 
+attribute which will be explained soon.
 
-Register the class/bundle above by putting it in the `config/bundles.php` array
+Register the class/bundle above by putting it in the `config/bundles.php` file
 which would look like something like the following.
 
 
@@ -122,8 +122,11 @@ class SampleController extends Controller
 ```
 
 In the `SampleController` class above we instruct the bundle using the `ImportRouteAnnotationPlugin`
-to register all class using the `Routable` PHP attribute or `annotation` we call it here and
+to register all class using the `Routable` PHP attribute or annotation we call it here and
 register routes for the methods that use the `Route` attribute/annotation.
+
+So the idea is that Pandawa makes use of PHP Attributes but in most the documentation we will call it
+annotations to register our code to the application.
 
 Run the Pandawa application same like Laravel with the following command.
 
