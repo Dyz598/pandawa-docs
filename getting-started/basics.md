@@ -125,7 +125,7 @@ In the `SampleController` class above we instruct the bundle using the `ImportRo
 to register all class using the `Routable` PHP attribute or annotation we call it here and
 register routes for the methods that use the `Route` attribute/annotation.
 
-So the idea is that Pandawa makes use of PHP Attributes but in most the documentation we will call it
+So the idea is that Pandawa makes use of PHP Attributes but in most of the documentation we will call it
 annotations to register our code to the application.
 
 Run the Pandawa application same like Laravel with the following command.

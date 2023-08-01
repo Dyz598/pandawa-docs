@@ -19,6 +19,8 @@ The following will give you a starting point in learning Pandawa and navigating
 its documentation from making a sample application to learning its architect and 
 learning all its features. Enjoy!
 
+**NOTE**: This Documentation expects the reader to have a good understanding of Laravel.
+
 - Getting Started
     - [Installation/Setup](getting-started/installation.md)
     - [The Basics/Sample App](getting-started/basics.md)
@@ -31,10 +33,11 @@ learning all its features. Enjoy!
     - [Dependency Injection]()
 - Routing
     - [Basic Routing]()
+    - [Middleware]()
     - [API Resource]()
     - [API Message]()
 - Database
-    - [Migrations]()
+    - [Migrations](database/migrations.md)
     - [Eloquent/Model]()
     - [Relation]()
     - [Repository]()
@@ -46,6 +49,7 @@ learning all its features. Enjoy!
     - [Best Practices]()
     - [Domain Driven Design]()
     - [Microservices]()
+    - [Package Development]()
 
 ## License
 
