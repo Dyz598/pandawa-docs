@@ -19,14 +19,15 @@ The following will give you a starting point in learning Pandawa and navigating
 its documentation from making a sample application to learning its architect and 
 learning all its features. Enjoy!
 
-**NOTE**: This Documentation expects the reader to have a good understanding of Laravel.
+**NOTE**: This Documentation expects the reader to have used Laravel and have a 
+good understanding of its architecture.
 
 - Getting Started
     - [Installation/Setup](getting-started/installation.md)
     - [The Basics/Sample App](getting-started/basics.md)
 - Architecture
     - [Directory Structure](architecture/directory-structure.md)
-    - [Bundle]()
+    - [Bundle](architecture/bundle.md)
     - [Plugin]()
     - [Configuration]()
     - [Annotations]()
