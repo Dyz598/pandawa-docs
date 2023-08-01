@@ -43,8 +43,9 @@ Run the tests using `phpunit` or `./vendor/bin/phpunit` command.
 This section will cover the `src` directory from learning how to organize your code
 and also learning best practices to organize it more neatly.
 
-The `src` directory does not restrict the you in organizing your code in specific ways
-but we have recommended ways to organize your code which follows best practices.
+The `src` directory is where you will put most of your core code such as **routes**, **models** and **services**.
+The directory does not restrict you to organize your code in specific ways but we have recommended ways to organize your code 
+which follows best practices.
 
 Currently, we have two ways to organize your code the **Standard Way** and the
 **Domain Driven Design Way**.
