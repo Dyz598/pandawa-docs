@@ -13,8 +13,8 @@
 └── vendor
 ```
 
-This section will cover the root directory structure of Pandawa and its best practices
-in how to organize your code more neatly.
+This section will cover the root directory structure of Pandawa and the purpose of each
+directory in the framework.
 
 Since Pandawa extends the Laravel framework there are still some directories and code files 
 from Laravel that was kept with the same purpose.
@@ -40,12 +40,11 @@ Run the tests using `phpunit` or `./vendor/bin/phpunit` command.
 
 ### Src Directory
 
-This section will cover the `src` directory from learning how to organize your code
-and also learning best practices to organize it more neatly.
+This section will cover the `src` directory by learning best practices in how to organize your code.
 
 The `src` directory is where you will put most of your core code such as **routes**, **models** and **services**.
-The directory does not restrict you to organize your code in specific ways but we have recommended ways to organize your code 
-which follows best practices.
+The directory does not restrict you to organize your code in specific ways, but we have recommended ways to 
+organize your code which follows best practices.
 
 Currently, we have two ways to organize your code the **Standard Way** and the
 **Domain Driven Design Way**.
@@ -60,7 +59,7 @@ For example, if you have a Blog application you would typically have a domain/mo
 **users** and **posts** because they follow a specific domain and are not closely related 
 to each other.
 
-The following are the implementations for both ways as follows.
+The following are the implementations for both ways are as follows.
 
 #### Standard Way
 ```
@@ -84,6 +83,24 @@ The following are the implementations for both ways as follows.
             ├── Resources
             └── PostBundle.php
 ```
+
+Directly in the root of the `src` directory you would typically make one folder which would be
+the name of your application.
+
+In this example we are making a simple blog application called `Acme` with two entities/tables
+`users` and `posts`.
+
+Then in the `Acme` folder we would separate the application to Modules/Domain that have no close
+relation to each other by making a directory for each Module/Domain which is why we have a `User`
+and `Post` directory.
+
+Finally in the directory of each module/domain we would have all the code parts related to it
+such as **API Routes**, **Models**, **Services** and **Repositories** which are all registered
+by the `Bundle` class in each directory.
+
+**NOTE:** Something in common between the **Standard Way** and the **Domain Driven Design Way** 
+is that both ways have the application named directory directly in `src` and each modules/domains
+separated to individual directories in it.
 
 #### Domain Driven Design Way
 ```
@@ -116,3 +133,19 @@ The following are the implementations for both ways as follows.
             │   └── PostInfrastructureBundle.php
             └── PostBundle.php
 ```
+
+The **Domain Driven Design Way** or DDD for short only has one difference it separates each 
+module/domain to three layers/directories which are `Application`, `Domain` and `Infrastructure`. 
+
+**NOTE:** Please research or go through DDD before going through the rest of the documentation and 
+have a solid understanding of DDD.
+
+These three layers follow the practices of DDD, we will not go through much in detail in what code files
+to put in each layer/directory we expect you to have a solid understanding of DDD and implement it the way 
+you understand it, but we will give a brief explanation of each layer in the following below.
+
+- `Application`: This layer stores all API routes or commands that execute/handle business process
+flows and handlers/listeners to domain events.
+- `Domain`: This layer stores all entities, business rules, value objects and interface code. Persistence
+layer or related code should be separated from Domain.
+- `Infrastructure`: This layer stores concrete access to external services such as databases or cache.
