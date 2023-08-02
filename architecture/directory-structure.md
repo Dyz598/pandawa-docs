@@ -146,6 +146,8 @@ you understand it, but we will give a brief explanation of each layer in the fol
 
 - `Application`: This layer stores all API routes or commands that execute/handle business process
 flows and handlers/listeners to domain events.
+
 - `Domain`: This layer stores all entities, business rules, value objects and interface code. Persistence
 layer or related code should be separated from Domain.
+
 - `Infrastructure`: This layer stores concrete access to external services such as databases or cache.
