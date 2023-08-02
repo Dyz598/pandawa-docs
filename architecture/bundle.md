@@ -21,4 +21,29 @@ you have to install the component/bundle it depends on.
 
 ### Basics
 
+A simple `Bundle` class would look like something like the following.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use Pandawa\Component\Foundation\Bundle\Bundle;
+
+/**
+ * @author  Aldi Arief <aldiarief598@gmail.com>
+ */
+class SampleBundle extends Bundle
+{
+}
+```
+
+Its a class typically named by the Domain or Functionality or Vendor Name suffixed with the word `Bundle` and
+extends the `Pandawa\Component\Foundation\Bundle\Bundle` class. 
+
+For example if you want to add code to connect your application to Kafka you would typically make a `KafkaBundle` 
+class and have the Bundle register and configure all your Kafka code to your application.
+
 ### Plugins
