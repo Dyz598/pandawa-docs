@@ -25,32 +25,38 @@ good understanding of its architecture.
 - Getting Started
     - [Installation/Setup](getting-started/installation.md)
     - [The Basics/Sample App](getting-started/basics.md)
-- Architecture
+- Basics
     - [Directory Structure](architecture/directory-structure.md)
     - [Bundle](architecture/bundle.md)
     - [Plugin]()
     - [Configuration]()
     - [Annotations]()
     - [Dependency Injection]()
+    - [Console]()
+    - [Scheduler]()
 - Routing
     - [Basic Routing]()
     - [Middleware]()
-    - [API Resource]()
-    - [API Message]()
+    - [Policy]()
 - Database
     - [Migrations](database/migrations.md)
     - [Eloquent/Model]()
     - [Relation]()
     - [Repository]()
-- Components
+- Message
+    - [Command Bus]()
+    - [Query Bus]()
     - [Events]()
-    - [Console]()
-    - [Scheduler]()
-- Topics
-    - [Best Practices]()
+- Advance Topics
+    - [API Resource]()
+    - [API Message]()
     - [Domain Driven Design]()
     - [Microservices]()
     - [Package Development]()
+- Best Practices
+    - [Naming Convention]()
+    - [Asynchronous]()
+    - [Annotations]()
 
 ## License
 
