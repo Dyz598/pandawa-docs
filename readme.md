@@ -10,7 +10,7 @@ To start using Pandawa run the following composer `create-project` command with
 the desirable project name.
 
 ```
-composer create-project pandawa/skeleton example-app
+composer create-project pandawa/skeleton:dev-master example-app
 ```
 
 ## Documentation

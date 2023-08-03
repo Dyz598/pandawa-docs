@@ -1,26 +1,22 @@
 # Installation/Setup
 
-1. To install git clone the `pandawa-skeleton` project with
+1. To start using Pandawa run the following composer `create-project` command with
 the desirable project name.
 
 ```
-git clone https://github.com/pandawa/pandawa-skeleton.git example-app
+composer create-project pandawa/skeleton:dev-master example-app
 ```
 
-2. Go to the project directory and remove the `.git` folder and initialize
-a new git repository if necessary.
+2. Initialize repository if necessary.
 
 ```
-rm -rf .git
-
 git init
 ```
 
-3. Composer install, setup environment and generate Laravel app key.
+3. Setup environment the same way you would in Laravel and generate application
+key using the `php artisan key:generate` command.
 
 ```
-composer install
-
 cp .env.example .env
 
 php artisan key:generate
