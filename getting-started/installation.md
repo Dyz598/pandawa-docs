@@ -7,18 +7,9 @@ the desirable project name.
 composer create-project pandawa/skeleton:dev-master example-app
 ```
 
-2. Initialize repository if necessary.
+2. Generate application key using the `php artisan key:generate` command.
 
 ```
-git init
-```
-
-3. Setup environment the same way you would in Laravel and generate application
-key using the `php artisan key:generate` command.
-
-```
-cp .env.example .env
-
 php artisan key:generate
 ```
 
